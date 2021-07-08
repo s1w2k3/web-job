@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>二次元浓度检测</title>
+<style type="text/css">
+#app {
+	width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.box {
+	float: left;
+	width: 280px;
+	overflow: hidden;
+	background: #f6f6f6;
+	box-sizing: border-box;
+	margin-left: 20px;
+	padding-top: 0;
+	padding-right: 15px;
+	padding-bottom: 25px;
+	padding-left: 15px;
+	height: 400px;
+}
+#box-left{
+	margin-left: 14px;
+}
+
+.box a {
+	float:inherit;
+	
+	flex-direction: column;
+	align-items: center;
+	color: #535353;
+	text-decoration: none;
+
+}
+#jrcd {
+	margin-top: 5px;
+}
+.img-exhibition img:hover {
+}
+#cd {
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.box a:hover {
+    color: #e52d67;
+}
+
+.imgBox {
+    width: 280px;
+    height: 187px;
+    overflow: hidden;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s linear;
+}
+
+.source {
+    border: 1px solid #535353;
+    padding: 6px 20px;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.detail {
+    font-size: 14px;
+    line-height: 160%;
+    text-align: justify;
+    width: 100%;
+}
+
+.box>a::after {
+	content: '';
+	width: 280px;
+	position:absolute;
+	background: #e52d67;
+	bottom: 0;
+	height: 0px;
+	transition: height 0.3s linear;
+   
+}
+
+
+.box:hover img {
+    transform: scale(1.15);
+}
+
+.box:hover .source {
+    background: #e52d67;
+    border-color: #e52d67;
+    color: #ffffff;
+}
+.exhibition{
+	width: 1100px;
+	height: 250px;
+
+	margin-right: auto;
+
+	margin-left: auto;
+	
+}
+.exhibition img{
+	width:200px;
+	height:200px;
+
+}
+.img-exhibition{
+	margin-top:25px;
+	width:200px;
+	height:200px;
+	margin-right:80px;
+	float:left;
+}
+.img-exhibition-first{
+	margin-left:30px;
+	margin-right:80px;
+	margin-top:25px;
+	width:200px;
+	height:200px;
+    float:left;
+}
+.img-exhibition-last{
+	margin-right:30px;
+	margin-top:25px;
+	width:200px;
+	height:200px;
+    float:left;
+}
+.exhibition-text{
+	width: 200px;
+	height: 25px;
+	text-align: center;
+	margin-top: 5px;
+}
+	
+.container {
+	padding: 0px;
+	height: 600px;
+	width: 1100px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-left: auto;
+}
+.introduce-left{
+	padding-top: 100px;
+	width: 300px;
+	margin-left: 25px;
+	margin-right: 25px;
+	height: 500px;
+	float: left;
+}
+.introduce-right{
+	width: 300px;
+	margin-left: 25px;
+	margin-top: 200px;
+	height: 450px;
+	float: left;
+}
+.introduce-mid{
+	
+	width:400px;
+	
+	height:600px;
+	float:left;
+}
+
+	
+</style>
+<link href="../css/banner-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+
+ <div class="menus menus1">
+      <h1>个人博客
+      </h1>
+      <ul>
+      
+		<div class="bg"></div>
+		<li><span><a href="index.html" target="blank">首页</a></span></li>
+		<li><span><a href="xz.html" target="blank">游戏扩列</a></span></li>
+		<li><span><a href="dumplings.html" target="blank">爱好</a></span></li>
+		<li><span><a href="drink.html">番剧</a></span></li>
+
+        </ul>
+        <div class="clear"></div>
+    </div>
+ 
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../js/index.js"></script>
+<div class="banenr">
+  <div class="banner-bg">
+    <h3>僕の追番</h3>
+  </div></div>
+<div class="banner-x"><img src="../images/drink/banner.png" /></div>
+<div class="jrcd" id="jrcd"><img src="../images/index/jrms.png" /></div>
+ <div id="app">
+        <div class="box" id="box-left">
+            <a href="#">
+                <div class="imgBox">
+                    <img src="../images/drink/e1.jpg" alt="">
+                </div>
+                <span class="source">入坑作</span>
+                <h2 class="title">东京食尸鬼</h2>
+          <p>在东京街头，一群成谜的吃人怪人“喰种”正悄悄在人类世界扩张他们的势力──平凡的大学生金木研因为遭到喰种猎食而性命垂危。医生为他进行了器官移植手术，然而器官提供者其实是喰种…。在病床上醒来的金木很快就感觉到身体不对劲，原本记忆中美味的食物全都走味到难以下咽。一开始，即使好几天不吃东西他也不会饿，但不久，激烈的空腹感开始折磨他。当他意识到，能引起他食欲的对象只剩下街上错身而过的男男女女。
+			<dr/>
+			在群众中潜伏着，狩猎着人类，这个吞食着死尸的怪人，人们称其为喰种，在青年和怪人相遇之时，充满波折的命运的齿轮开始转动了！</p></a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="imgBox">
+                    <img src="../images/drink/e2.jpg" alt="">
+                </div>
+                <span class="source">首推</span>
+                <h2 class="title">无职转生</h2>
+            <p>34岁无职童贞尼特身无分文地被赶出家门，发现自己的人生已经完全走投无路。刚刚产生后悔的想法，他就被卡车撞死了。然后醒来的地方居然是——剑与魔法的异世界！！重生为名叫卢迪乌斯的婴儿的他下定决心，“这次一定要认真地活下去……！”，一定要度过一段不会后悔的人生。他利用前世的智力很快使得自己的魔术的才能开花结果，结果一位年轻的女孩子成了自己的家庭教师。并且又与一位有着绿宝石般美丽秀发的四分一血统的精灵相遇。他崭新的人生开始前进。——让人憧憬的转生型奇幻小说，在这里开始！</p></a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <div class="imgBox">
+                    <img src="../images/drink/e3.jpg" alt="">
+                </div>
+                <span class="source">我想死</span>
+                <h2 class="title">进击的巨人</h2>
+          
+            <p>107年前（743年），世界上突然出现了人类的天敌“巨人”。面临着生存危机而残存下来的人类逃到了一个地方，盖起了三重巨大的城墙。人们在这隔绝的环境里享受了一百多年的和平，直到艾伦·耶格尔十岁那年，60米高的“超大型巨人”突然出现，以压倒性的力量破坏城门，其后瞬间消失，凶残的巨人们成群的冲进墙内捕食人类。</p></a>
+</div></div>
+<hr />
+
+
+
+    
+<div id="cd">    
+<div class="exhibition">
+<div class="img-exhibition-first"><img src="../images/drink/1.jpg" />
+<div class="exhibition-text">辉夜大小姐想让我告白</div></div>
+<div class="img-exhibition"><img src="../images/drink/2.jpg" /><div class="exhibition-text">工作细胞 </div></div>
+<div class="img-exhibition"><img src="../images/drink/3.jpg" /><div class="exhibition-text">re：0</div></div>
+<div class="img-exhibition-last"><img src="../images/drink/4.jpg" /><div class="exhibition-text">京阿尼的</div></div>
+</div>
+
+<div class="exhibition">
+<div class="img-exhibition-first"><img src="../images/drink/5.jpg" /><div class="exhibition-text">JOJO的奇妙冒险</div></div>
+<div class="img-exhibition"><img src="../images/drink/6.jpg" /><div class="exhibition-text">赛马娘 </div></div>
+<div class="img-exhibition"><img src="../images/drink/7.jpg" /><div class="exhibition-text">转生史莱姆</div></div>
+<div class="img-exhibition-last"><img src="../images/drink/8.jpg" /><div class="exhibition-text">夏洛特</div></div>
+</div></div>
+<hr />
+
+
+
+<footer>
+  <div id="footer">
+	
+	<p>联系作者QQ;1075771654</p>
+  </div>
+
+</footer>
+</body>
+</html>
